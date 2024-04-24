@@ -97,13 +97,23 @@ Future<void> _onTapShare() async {
   if (Platform.isIOS) {
     final iosDeviceInfo = await deviceData.iosInfo;
     if (iosDeviceInfo.model.contains('iPad')) {
-      _checkIpadAvailable();
-    } else {
+      // If the device is an iPad, use a non-zero Rect for sharePositionOrigin
       Share.share(
-          'Download The Cbep: My Pocket in AppStore! https://apps.apple.com/us/app/the-cbep-my-pocket/id6499197177');
+        'Download The Cbep: My Pocket in AppStore! https://apps.apple.com/us/app/the-cbep-my-pocket/id6499197177',
+        sharePositionOrigin:
+            Rect.fromLTWH(0, 0, 100, 100), // Adjust dimensions as needed
+      );
+    } else {
+      // For other devices, use the default share behavior
+      Share.share(
+        'Download The Cbep: My Pocket in AppStore! https://apps.apple.com/us/app/the-cbep-my-pocket/id6499197177',
+      );
     }
   } else {
-    _checkIpadAvailable();
+    // For non-iOS devices, use the default share behavior
+    Share.share(
+      'Download The Cbep: My Pocket in AppStore! https://apps.apple.com/us/app/the-cbep-my-pocket/id6499197177',
+    );
   }
 }
 
