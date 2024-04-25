@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyCNKXsodN6q2bNoTVqUfPq7VkYoESK8t84</string>
+	<key>GCM_SENDER_ID</key>
+	<string>252443204932</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.sebgio.utility.finance</string>
+	<key>PROJECT_ID</key>
+	<string>fintrack-app-e6423</string>
+	<key>STORAGE_BUCKET</key>
+	<string>fintrack-app-e6423.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:252443204932:ios:e09324485abda2986e4b11</string>
+</dict>
+</plist>
